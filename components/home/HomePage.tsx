@@ -6,6 +6,7 @@ import Link from "next/link";
 import CircuitBoardHeroImage from "../../public/images/home/Printed-circuit-board-pana.svg";
 import ColabImage from "../../public/images/home/Live collaboration-rafiki.svg";
 import FirmwareImage from "../../public/images/home/Firmware-amico.svg";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -104,7 +105,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 ">
-            <img
+            <Image
               loading="lazy"
               src={CircuitBoardHeroImage}
               alt="circuit repair"
@@ -123,7 +124,8 @@ export default function HomePage() {
               <br />
             </p>
           </div>
-          <img
+          <Image
+            alt="colaboration illustration"
             loading="lazy"
             src={ColabImage}
             className="max-w-sm rounded-lg shadow-2xl"
@@ -140,7 +142,8 @@ export default function HomePage() {
               easy to search database built for you.{" "}
             </p>
           </div>
-          <img
+          <Image
+            alt="malfunctioning computer illustration"
             loading="lazy"
             src={FirmwareImage}
             className="max-w-sm rounded-lg shadow-2xl"
